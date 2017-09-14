@@ -1,0 +1,74 @@
+body {
+    background: #333;
+    margin: 0;
+}
+#handle {
+    width: 25vw;
+    height: 50vh;
+    position: fixed;
+    left: 37.5vw;
+    bottom: -10vh;
+    z-index: 1;
+    background: #555;
+    box-shadow: 2px -5px 10px #444 inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#headBase {
+    width: 50vw;
+    height: 25vh;
+    position: fixed;
+    left: 25vw;
+    bottom: 40vh;
+    background: #444;
+    box-shadow: 0px 2px 4px #333;
+    border-radius: 0 0 25% 25%;
+    z-index: 2;
+}
+#front {
+    width: 50vw;
+    height: 5vh;
+    position: fixed;
+    left: 25vw;
+    bottom: 62.5vh;
+    border-radius: 50%;
+    z-index: 3;
+    transition: background .08s linear;
+}
+#button {
+    display: inline-block;
+    color: #AAA;
+    background: #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: border-radius .5s linear;
+}
+#light {
+    position: fixed;
+    left: 25vw;
+    top: 0;
+    z-index: 0;
+    width: 50vw;
+    height: 35vh;
+}
+.on {
+    background: radial-gradient(#FFA, #FFD);
+    box-shadow: 0 0 15px #FFA;
+}
+.off {
+    background: transparent;
+}
+.down {
+    box-shadow: 0 5px 0 0 #222;
+}
+.up {
+    box-shadow: 0 7px 0 0 #222;
+}
+.lit {
+    background: radial-gradient(#FF9, #FF7);
+}
+.dark {
+    background: radial-gradient(#AAA, #AAA, #777, #333);
+}
