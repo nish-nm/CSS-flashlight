@@ -3,16 +3,7 @@
     <head>
         <script src="src="https://code.jquery.com/jquery-3.1.1.js"></script>
         <script src="src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-        <title>Page Title</title>
-    <script>
-    $(function(){ $("#button").click(function()
-    { $(this).toggleClass("down"); 
-      $(this).toggleClass("up");     
-      $("#light").toggleClass("on");
-      $("#light").toggleClass("off"); 
-      $("#front").toggleClass("lit"); 
-      $("#front").toggleClass    ("dark"); }); });
-    </script> 
+        <title>Flashlight torch</title>
     </head>
 <style media="screen" type="text/css">
 body {
@@ -90,8 +81,15 @@ body {
     background: radial-gradient(#AAA, #AAA, #777, #333);
 }
 
-</style>
-    <script>
+</style> 
+    <body>
+        <div id="light" class="off"></div>
+        <div id="front" class="dark"></div>
+        <div id="headBase"></div>
+        <div id="handle">
+            <div id="button" class="up"></div>
+        </div>
+     <script>
     $(function(){ $("#button").click(function()
     { $(this).toggleClass("down"); 
       $(this).toggleClass("up");     
@@ -100,14 +98,5 @@ body {
       $("#front").toggleClass("lit"); 
       $("#front").toggleClass    ("dark"); }); });
     </script> 
-    <body>
-        <div id="light" class="off"></div>
-        <div id="front" class="dark"></div>
-        <div id="headBase"></div>
-        <div id="handle">
-            <div id="button" class="up"></div>
-        </div>
-     <script src="CSS.js"></script> 
     </body>
-<script src="CSS.js"></script>
 </html>
